@@ -118,7 +118,7 @@ burger.addEventListener("click", () => {
     }
 })
 
-const mq = window.matchMedia("(max-width:768px)");
+const mq = window.matchMedia("(max-width:991px)");
 function mediaQuery(e) {
     if (e.matches) {
         ul.style.display = "none";
