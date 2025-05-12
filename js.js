@@ -21,7 +21,6 @@ logo.alt = "logo";
 figure.appendChild(logo);
 
 
-
 const ul = document.createElement("ul");
 ul.style.listStyle = "none";
 ul.style.display = "flex";
@@ -58,7 +57,7 @@ Object.assign(container.style, {
   backgroundImage: "url(images/banner-bg.png)",
   backgroundSize: "cover",
   width: "100%",
-  padding: "100px 20px",
+  padding: "100px 0",
   textAlign: "center",
   color: "#fff",
   display: "flex",
@@ -89,4 +88,49 @@ container.appendChild(btn);
 
 root.appendChild(header);
 root.appendChild(container);
+
+
+// Media query for mobile devices
+
+const burger = document.createElement("div");
+burger.className = "burger";
+burger.innerHTML = "☰";
+burger.style.display = "none";
+burger.style.fontSize = "2rem";
+burger.style.cursor = "pointer";
+
+nav.appendChild(burger);
+burger.addEventListener("click", () => {
+    if (ul.style.display === "none") {
+        ul.style.display = "flex";
+        ul.style.flexDirection = "column";
+        ul.style.position = "absolute";
+        ul.style.top = "60px";
+        ul.style.left = "0";
+        ul.style.width = "100%";
+        ul.style.backgroundColor = "#f8f8f8";
+        ul.style.padding = "20px";
+        ul.style.zIndex = "1";
+        ul.style.gap = "10px";
+
+    } else {
+        ul.style.display = "none";
+    }
+})
+
+const mq = window.matchMedia("(max-width:768px)");
+function mediaQuery(e) {
+    if (e.matches) {
+        ul.style.display = "none";
+        burger.style.display = "block";
+    } else {
+    ul.style.display = "flex";
+    burger.style.display = "none";
+    ul.style.position = "static";
+    ul.style.flexDirection = "row";
+    ul.style.background = "transparent";
+    }
+}
+mq.addEventListener("change", mediaQuery);
+mediaQuery(mq);
 
