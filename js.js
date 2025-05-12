@@ -90,29 +90,3 @@ container.appendChild(btn);
 root.appendChild(header);
 root.appendChild(container);
 
-
-// root.innerHTML = `
-//   <header>
-//   <nav>
-
-//             <ul style="list-style: none; display: flex; gap: 20px;">
-//                 <li><a style=" text-decoration:none; font-size:1.3rem; " href="#">Home</a></li>
-//                 <li><a  style=" text-decoration:none; font-size:1.3rem; " href="#">About</a></li>
-//                 <li><a style=" text-decoration:none; font-size:1.3rem; "  href="#">Services</a></li>
-//                 <li><a style=" text-decoration:none; font-size:1.3rem; "  href="#">Web</a></li>
-//                 <li><a  style=" text-decoration:none; font-size:1.3rem; " href="#">Element</a></li>
-//                 <li><a  style=" text-decoration:none; font-size:1.3rem; " href="#">Contact</a></li>
-//             </ul>
-//             <div class="search">
-//                 <i class="fa-solid fa-magnifying-glass" style= "padding-right:2rem; font-size:1.3rem;"></i>
-//             </div>
-//           </nav>
-//         </header>
-//         <div class="container" style= " background-image: url(images/banner-bg.png); width:100%; height:auto; color:#fff; padding-bottom: 90px;
-//         text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; 
-//         background-size:cover; ">
-//          <h1> Web eLements Templates  </h1>
-//          <h3>  Free Multipurpose Responsive Landing Page </h3>
-//          <a href="#" role="button" style=" color:#000; text-decoration:none; font-size:1rem; padding:20px; background:#fff;"> Read More   </a>
-//         </div>
-// `
